@@ -8,6 +8,7 @@
         <version>2.4.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <packaging>war</packaging>
     <groupId>org.jayden</groupId>
     <artifactId>bookllist</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -17,6 +18,12 @@
         <java.version>11</java.version>
     </properties>
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
+<!--        排除自带的Tomcat容器-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -94,6 +101,14 @@
             <artifactId>spring-test</artifactId>
             <version>5.2.14.RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
         </dependency>
     </dependencies>
 
