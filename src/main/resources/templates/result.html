@@ -17,8 +17,8 @@
 
 
 <div class="container">
-    <div class="row col-sm-12 col-md-12">
-        <div th:each="book: ${books}" class="card col-lg-2 col-sm-12 col-md-12" style="margin-left: 30px;margin-bottom: 50px">
+    <div class="row col-sm-12 col-md-12 justify-content-center" style="text-align: center">
+        <div th:each="book: ${books}" class="card col-lg-2 col-sm-12 col-md-12 justify-content-center" style="margin-left: 30px;margin-bottom: 50px;text-align: center">
 <!--            <div class="alert alert-primary w-50 p-3" style="" th:text="${book.getId()}">Primary</div>-->
 <!--            <span th:text="${book.getId()}"></span>-->
             <img th:src="${book.getPics()}" class="card-img-top" alt="30px">
@@ -40,7 +40,7 @@
     </div>
 
     <nav aria-label="Page navigation example">
-        <ul class="pagination">
+        <ul class="pagination justify-content-center">
             <li class="page-item"><a class="page-link" th:href="@{/book/find/all/page(pageId=${currentPages}-1)}">Previous</a></li>
             <li class="page-item" th:classappend="${currentPages} == ${i}?'active'"  th:each="i: ${#numbers.sequence(1,totalPages)}" th:if="currentPages eq i?'disabled':''" >
 <!--                表达式一定要这么些，不然会报错。注意更改的是 a标签里面的东西，而不是li!-->

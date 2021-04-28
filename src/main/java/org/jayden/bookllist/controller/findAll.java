@@ -6,12 +6,12 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.jayden.bookllist.entity.BookChinaMechinePress;
 import org.jayden.bookllist.mapper.BookChinaMechinePressMapper;
 import org.jayden.bookllist.service.IBookChinaMechinePressService;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+//import org.junit.Test;
+//import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.stereotype.Controller;
-import org.springframework.test.context.junit4.SpringRunner;
+//import org.springframework.boot.test.context.SpringBootTest;
+//import org.springframework.stereotype.Controller;
+//import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,8 +21,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/book/find")
-@SpringBootTest
-@RunWith(SpringRunner.class)
+//@SpringBootTest
+//@RunWith(SpringRunner.class)
 public class findAll {
     @Autowired
     IBookChinaMechinePressService bookService;
@@ -47,7 +47,7 @@ public class findAll {
 
 
     }
-    @Test
+//    @Test
     @RequestMapping("/all/page")
     public ModelAndView page(@RequestParam int pageId){
         QueryWrapper<BookChinaMechinePress> queryWrapper = new QueryWrapper<>();

@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class CodeGenerator {
 //    @Autowired
 //    private DataSource dsc;
 
-    @Test
+//    @Test
     public void test() {
         AutoGenerator mpg = new AutoGenerator();
 
