@@ -52,7 +52,7 @@ public class findAll {
     public ModelAndView page(@RequestParam int pageId){
         QueryWrapper<BookChinaMechinePress> queryWrapper = new QueryWrapper<>();
         queryWrapper.orderByDesc("date");
-        Page<BookChinaMechinePress> page = new Page<>(pageId, 10);
+        Page<BookChinaMechinePress> page = new Page<>(pageId, 20);
         IPage<BookChinaMechinePress> userIPage = mapper.selectPage(page, queryWrapper);
         List<BookChinaMechinePress> list = userIPage.getRecords();
         ModelAndView modelAndView = new ModelAndView();
